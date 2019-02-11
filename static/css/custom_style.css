@@ -1,0 +1,24 @@
+h2 {
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 27pt;
+    font-style: oblique;
+    font-weight: bolder;
+    color: #49B5FD;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgba(37, 0, 255, 0.44);
+    /*text-align: center;*/
+}
+
+ul {
+    font-family: "Ubuntu Mono", SansSerif;
+    font-size: 15pt;
+}
+
+p {
+    font-family: Monaco, SansSerif;
+    font-size: 16pt;
+}
+
+body {
+    background: url("/static/img/img1.jpeg") fixed no-repeat right top;
+    background-size: 52vw;
+}
