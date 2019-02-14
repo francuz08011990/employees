@@ -25,3 +25,8 @@ class Profile(models.Model):
     def get_full_name(self):
         middle_name = self.middle_name.split(' ')[0]
         return '{} {} {}'.format(self.first_name, middle_name, self.last_name)
+
+    @property
+    def get_middle_name(self):
+        middle_name = self.middle_name.split(' ')[0]
+        return '{}'.format(middle_name)

@@ -21,7 +21,7 @@
             <td>
                 <p>
                     <b>{{ employee.get_full_name }}</b> -
-                    <span class="badge badge-secondary">Position: "{{ employee.position }}"</span>
+                    <span class="badge badge-primary">Position: "{{ employee.position }}"</span>
                 </p>
             <ul>
                 {% for obj in employee.employees.all %}
@@ -32,22 +32,22 @@
                             {% for i in obj.employees.all %}
                                 <li>
                                     {{ i.get_full_name }} -
-                                    <span class="badge badge-secondary">Position: "{{ i.position }}"</span>
+                                    <span class="badge badge-success">Position: "{{ i.position }}"</span>
                                     <ul>
                                         {% for j in i.employees.all %}
                                             <li>
                                                 {{ j.get_full_name }} -
-                                                <span class="badge badge-secondary">Position: "{{ j.position }}"</span>
+                                                <span class="badge badge-warning">Position: "{{ j.position }}"</span>
                                                 <ul>
                                                     {% for k in j.employees.all %}
                                                         <li>
                                                             {{ k.get_full_name }} -
-                                                            <span class="badge badge-secondary">Position: "{{ k.position }}"</span>
+                                                            <span class="badge badge-info">Position: "{{ k.position }}"</span>
                                                             <ul>
                                                                 {% for u in k.employees.all %}
                                                                     <li>
                                                                         {{ u.get_full_name }} -
-                                                                        <span class="badge badge-secondary">Position: "{{ u.position }}"</span>
+                                                                        <span class="badge badge-dark">Position: "{{ u.position }}"</span>
                                                                     </li>
                                                                 {% endfor %}
                                                             </ul>
